@@ -1,0 +1,77 @@
+:root {
+  --main-bg-color: #733380;
+  --main-font-color: #fff;
+  --accent-color-red: #fc766aff;
+  --accent-color-yellow: #f9a12eff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  color: var(--main-font-color);
+  font-size: 72px;
+}
+
+h4 {
+  background: -webkit-linear-gradient(
+    var(--accent-color-red),
+    var(--accent-color-yellow)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  margin: 20px auto;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-container {
+  width: 750px;
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+kbd {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 128px;
+  color: var(--main-font-color);
+  display: block;
+}
+
+.grid span {
+  font-size: 32px;
+  color: var(--accent-color-red);
+}
+
+.key {
+  border: 5px solid var(--accent-color-yellow);
+  padding: 20px 10px;
+  transition: all 0.07s ease;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: var(--accent-color-red);
+  box-shadow: 0 0 1rem #ffc600;
+}
